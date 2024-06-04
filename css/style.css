@@ -45,6 +45,10 @@
     padding-block-start: 1.1rem;
  }
 
+
+
+
+
 fieldset {
     all: unset;
 }
@@ -67,21 +71,37 @@ fieldset {
     
 }
 
-input, label:has(input[name="query"]) {
+input{
     padding-block: 0.8rem;
     padding-inline: 1.4rem;
     border-radius: 8px;
     border: 1px solid var(--green-600);
 }
+
 label:has(input[name="query"]) {
-    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.08rem;
+    padding-block: 0.7rem;
+    padding-inline: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid var(--green-600);
+}
+input[type="radio"] {
+    /* all: unset ; */
+    accent-color: var(--green-600);
+    width: 20px;
+    height: 20px;
+    
+    /* border: 20px solid r; */
 }
 
 .radio-con {
     padding-block-start: 1rem;
     display: grid;
     gap: 1rem;
-   
+  
 }
 
 
