@@ -41,7 +41,14 @@
     gap: 1.5rem;
     border-radius: 15px;
     /* Mobile */
-    inline-size: 21.4rem;
+    /* inline-size: 21.4rem; */
+    /* block-size: 54.3rem; */
+    /* padding-inline: 1.5rem; */
+    /* padding-block-start: 1.1rem; */
+    /* padding-block-end: 1.55rem; */
+    
+    /* Desktop */
+    inline-size: 46rem;
     /* block-size: 54.3rem; */
     padding-inline: 1.5rem;
     padding-block-start: 1.1rem;
@@ -133,8 +140,11 @@ input[type="radio"] {
 textarea {
     border-radius: 8px;
     resize: none;
-    height: 15rem;
     border: 1px solid var(--green-600);
+    /* Mobile */
+    /* height: 15rem; */
+    /* Desktop */
+    height: 6.5rem;
 }
 .textarea-con {
     padding-block-end: 1rem;
