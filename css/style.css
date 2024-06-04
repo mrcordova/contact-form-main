@@ -14,7 +14,9 @@
  }
 
 
-
+.form-controls-full-width {
+    grid-column: 1 / -1;
+}
 
 
  @media (min-width: 35rem) {
