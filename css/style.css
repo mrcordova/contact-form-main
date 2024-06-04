@@ -34,6 +34,7 @@
  #contact-form {
     background-color: var(--white);
     display: grid;
+    border-radius: 15px;
     /* Mobile */
     inline-size: 21.4rem;
     block-size: 54.3rem;
@@ -50,6 +51,9 @@ fieldset {
 
 .form-controls-full-width {
     grid-column: 1 / -1;
+}
+.form-error-hide {
+    display: none;
 }
 .form-heading {
     color: var(--grey-900);
