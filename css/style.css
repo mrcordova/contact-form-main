@@ -24,6 +24,7 @@
 }
  
  body {
+    background-color: var(--green-200);
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
