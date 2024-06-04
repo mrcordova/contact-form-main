@@ -36,6 +36,7 @@
  #contact-form {
     background-color: var(--white);
     display: grid;
+    /* gap: 10px; */
     border-radius: 15px;
     /* Mobile */
     inline-size: 21.4rem;
@@ -62,7 +63,14 @@ fieldset {
     color: var(--grey-900);
     font-size: 1.9rem;
     
-    padding-block-end: 1.6rem;
+    
+}
+
+input {
+    padding-block: 0.7rem;
+    padding-inline: 1.4rem;
+    border-radius: 8px;
+    border: 1px solid var(--green-600);
 }
 label:has(input[name="query"]) {
     /* border: 1px solid red; */
