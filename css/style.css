@@ -36,6 +36,7 @@
     display: grid;
     /* Mobile */
     inline-size: 21.4rem;
+    block-size: 54.3rem;
     padding-inline: 1.5rem;
  }
 
@@ -52,6 +53,7 @@ fieldset {
 }
 .form-heading {
     color: var(--grey-900);
+    font-size: 1.9rem;
 }
 label:has(input[name="query"]) {
     /* border: 1px solid red; */
