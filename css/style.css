@@ -78,8 +78,9 @@ label:has(input[name="query"]) {
 }
 
 .radio-con {
+    padding-block-start: 1rem;
     display: grid;
-    gap: 10px;
+    gap: 1rem;
    
 }
 
