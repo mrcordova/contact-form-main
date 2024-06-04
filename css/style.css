@@ -30,7 +30,7 @@
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
-    place-content: center;
+    place-content: safe center;
  }
 
  #contact-form {
@@ -102,6 +102,13 @@ input[type="radio"] {
     display: grid;
     gap: 1rem;
   
+}
+
+textarea {
+    border-radius: 8px;
+    resize: none;
+    height: 15rem;
+    
 }
 
 
