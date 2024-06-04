@@ -88,6 +88,19 @@ label:has(input[name="query"]) {
     border-radius: 8px;
     border: 1px solid var(--green-600);
 }
+/* label[for='consent'] {
+    display: flex;
+    align-items: center;
+} */
+.test {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    accent-color: var(--green-600);
+    width: 17px;
+    height: 17px;
+}
 input[type="radio"] {
     /* all: unset ; */
     accent-color: var(--green-600);
@@ -108,7 +121,7 @@ textarea {
     border-radius: 8px;
     resize: none;
     height: 15rem;
-    
+    border: 1px solid var(--green-600);
 }
 
 
