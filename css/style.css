@@ -67,7 +67,7 @@ fieldset {
 }
 
 input {
-    padding-block: 0.7rem;
+    padding-block: 0.8rem;
     padding-inline: 1.4rem;
     border-radius: 8px;
     border: 1px solid var(--green-600);
