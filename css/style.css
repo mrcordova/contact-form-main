@@ -31,6 +31,8 @@
     min-height: 100dvh;
     display: grid;
     place-content: safe center;
+
+    margin-block: 2rem;
  }
 
  #contact-form {
@@ -43,7 +45,7 @@
     /* block-size: 54.3rem; */
     padding-inline: 1.5rem;
     padding-block-start: 1.1rem;
-    padding-block-end: 1.1rem;
+    padding-block-end: 1.55rem;
  }
 
 
@@ -116,6 +118,7 @@ input[type="radio"] {
     background-color: var(--green-600);
     color: var(--white);
     padding-block: 1.05rem;
+    
     border-radius: 8px;
     font-size: 1.1rem
 }
