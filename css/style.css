@@ -22,7 +22,9 @@
     font-weight: 700;
     font-style: normal;
 }
- 
+ .asterick {
+    color: var(--green-600);
+ }
  body {
     background-color: var(--green-200);
     min-height: 100vh;
@@ -37,8 +39,9 @@
     border-radius: 15px;
     /* Mobile */
     inline-size: 21.4rem;
-    block-size: 54.3rem;
+    /* block-size: 54.3rem; */
     padding-inline: 1.5rem;
+    padding-block-start: 1.1rem;
  }
 
 fieldset {
@@ -58,7 +61,8 @@ fieldset {
 .form-heading {
     color: var(--grey-900);
     font-size: 1.9rem;
-    padding-block-start: 1.1rem;
+    
+    padding-block-end: 1.6rem;
 }
 label:has(input[name="query"]) {
     /* border: 1px solid red; */
