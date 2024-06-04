@@ -50,7 +50,9 @@ fieldset {
 .form-controls-full-width {
     grid-column: 1 / -1;
 }
-
+.form-heading {
+    color: var(--grey-900);
+}
 label:has(input[name="query"]) {
     /* border: 1px solid red; */
 }
