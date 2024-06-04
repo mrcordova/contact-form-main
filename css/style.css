@@ -67,7 +67,7 @@ fieldset {
     
 }
 
-input {
+input, label:has(input[name="query"]) {
     padding-block: 0.8rem;
     padding-inline: 1.4rem;
     border-radius: 8px;
