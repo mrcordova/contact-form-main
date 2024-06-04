@@ -43,6 +43,7 @@
     /* block-size: 54.3rem; */
     padding-inline: 1.5rem;
     padding-block-start: 1.1rem;
+    padding-block-end: 1.1rem;
  }
 
 
@@ -51,7 +52,9 @@
     align-items: center;
     gap: 1.4rem;
 }
-
+.checkbox-parent {
+    padding-block-end: 1rem;
+}
 
 fieldset {
     all: unset;
@@ -108,6 +111,15 @@ input[type="radio"] {
     /* border: 20px solid r; */
 }
 
+.submit-btn {
+    text-align: center;
+    background-color: var(--green-600);
+    color: var(--white);
+    padding-block: 1.05rem;
+    border-radius: 8px;
+    font-size: 1.1rem
+}
+
 .radio-con {
     padding-block-start: 1rem;
     display: grid;
@@ -121,7 +133,9 @@ textarea {
     height: 15rem;
     border: 1px solid var(--green-600);
 }
-
+.textarea-con {
+    padding-block-end: 1rem;
+}
 
  @media (min-width: 35rem) {
     #contact-form {
