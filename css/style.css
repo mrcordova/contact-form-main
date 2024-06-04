@@ -54,6 +54,7 @@ fieldset {
 .form-heading {
     color: var(--grey-900);
     font-size: 1.9rem;
+    padding-block-start: 1.1rem;
 }
 label:has(input[name="query"]) {
     /* border: 1px solid red; */
