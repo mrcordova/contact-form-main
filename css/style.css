@@ -34,7 +34,9 @@
  #contact-form {
     background-color: var(--white);
     display: grid;
+    /* Mobile */
     inline-size: 21.4rem;
+    padding-inline: 1.5rem;
  }
 
 fieldset {
