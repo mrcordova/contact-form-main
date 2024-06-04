@@ -36,7 +36,7 @@
  #contact-form {
     background-color: var(--white);
     display: grid;
-    /* gap: 10px; */
+    gap: 1.5rem;
     border-radius: 15px;
     /* Mobile */
     inline-size: 21.4rem;
