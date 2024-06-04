@@ -32,6 +32,7 @@
  }
 
  #contact-form {
+    background-color: var(--white);
     display: grid;
  }
 
