@@ -80,8 +80,16 @@ fieldset {
 .form-controls-full-width {
     grid-column: 1 / -1;
 }
+
+
+.form-error {
+    color: var(--red);
+}
 .form-error-hide {
     display: none;
+}
+.form-error-border {
+    border: 1px solid var(--red);
 }
 .form-heading {
     color: var(--grey-900);
@@ -89,6 +97,8 @@ fieldset {
     
     
 }
+
+
 
 input{
     padding-block: 0.8rem;
@@ -122,6 +132,7 @@ label:has(input[name="query"]:is(:active, :focus)) {
     cursor: pointer;
     background-color: var(--green-200);
 }
+
  label[for="consent"]:is(:active, :focus, :hover) {
     cursor: pointer;
     color: var(--green-600);
@@ -134,6 +145,9 @@ label:has(input[name="query"]:hover) {
     
 }
 
+/* input[type='checkbox']:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
+    background: url('../assets/images/icon-checkbox-check.svg');
+} */
 
 input[type="checkbox"] {
     accent-color: var(--green-600);
@@ -141,20 +155,16 @@ input[type="checkbox"] {
     height: 20px;
 }
 input[type='checkbox']:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
-    /* cursor: pointer; */
     background-image: url('../assets/images/icon-checkbox-check.svg');
-    /* accent-color: red; */
 }
 
 input[type='checkbox']:is(:active, :focus, :hover) {
     outline: var(--green-600 );
     outline-style: solid;
     outline-width: 1px;
-    /* border: 2px solid var(--green-600); */
 }
 
 input[type="radio"] {
-    /* all: unset ; */
     accent-color: var(--green-600);
     width: 20px;
     height: 20px;
@@ -176,7 +186,6 @@ input[type="radio"] {
 .submit-btn:hover {
     cursor: pointer;
     background-color: hsl(169, 82%, 10%);
-   /* filter:brightness(0.5); */
 }
 
 .radio-con {
