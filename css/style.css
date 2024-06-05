@@ -25,6 +25,8 @@
  .asterick {
     color: var(--green-600);
  }
+
+ 
  body {
     background-color: var(--green-200);
     min-height: 100vh;
@@ -179,6 +181,20 @@ input[type="radio"] {
     
 }
 
+.success-message-con {
+    background-color: var(--grey-900);
+    color: var(--white);
+    border: 0px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.success-message-con>h2 {
+    font-size: 1.1rem;
+    display: flex;
+    gap: 0.4rem;
+    padding-block-end: 1rem;
+}
 
 .submit-btn {
     text-align: center;
