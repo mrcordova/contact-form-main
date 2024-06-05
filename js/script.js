@@ -15,8 +15,8 @@ submitBtn.addEventListener('click', (e) => {
         input.classList.toggle('form-error-border', !input.checkValidity());
         input.nextElementSibling.classList.toggle('form-error-hide', !input.classList.contains('form-error-border'));
     }
-    for (const input of radioInputs) {
-        spanRadio.classList.toggle('form-error-hide', input.checkValidity());
+    for (const radioInput of radioInputs) {
+        spanRadio.classList.toggle('form-error-hide', radioInput.checkValidity());
     }
     spanCheck.classList.toggle('form-error-hide', checkInput.checkValidity());
     
