@@ -146,13 +146,20 @@ input[type='checkbox']:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
     /* accent-color: red; */
 }
 
+input[type='checkbox']:is(:active, :focus, :hover) {
+    outline: var(--green-600 );
+    outline-style: solid;
+    outline-width: 1px;
+    /* border: 2px solid var(--green-600); */
+}
+
 input[type="radio"] {
     /* all: unset ; */
     accent-color: var(--green-600);
     width: 20px;
     height: 20px;
     
-    /* border: 20px solid r; */
+    
 }
 
 
