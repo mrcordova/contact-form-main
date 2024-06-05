@@ -44,6 +44,7 @@
     display: grid;
     gap: 1.5rem;
     border-radius: 15px;
+    /* width: 100%; */
     /* Mobile */    
     /* inline-size: 21.4rem; */
     /* block-size: 54.3rem; */
@@ -107,7 +108,8 @@ fieldset {
 
 input{
     padding-block: 0.8rem;
-    padding-inline: 1.4rem;
+    /* padding-inline: 1.4rem; */
+    text-indent: 1.4rem;
     border-radius: 8px;
     border: 1px solid var(--grey-900);
 }
@@ -208,8 +210,10 @@ textarea {
     /* Mobile */
     /* height: 15rem; */
     height: clamp(6.5rem, 17.9930rem + -12.7700vw, 15rem);
-    padding-block: clamp(0rem, -0.2465rem + 1.0516vw, 0.7rem);
-    padding-inline:clamp(0rem, -0.5634rem + 2.4038vw, 1.6rem);
+    /* padding-block: clamp(0rem, -0.2465rem + 1.0516vw, 0.7rem); */
+    padding-block: 0.7rem;
+    text-indent: 1.6rem;
+    /* padding-inline:clamp(0rem, -0.5634rem + 2.4038vw, 1.6rem); */
     /* Desktop */
     /* height: 6.5rem; */
     /* padding-block: 0.7rem; */
