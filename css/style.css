@@ -97,8 +97,8 @@ input{
     border: 1px solid var(--grey-900);
 }
 
-input:is(:hover, :focus) {
-    border: 1px solid var(--green-600);
+input:is(:active, :focus, :hover) {
+    border: 2px solid var(--green-600);
     cursor: pointer;
 }
 
@@ -112,14 +112,21 @@ label:has(input[name="query"]) {
     border-radius: 8px;
     border: 1px solid var(--grey-900);
 }
-label[for="consent"]:is(:hover, :focus) {
+label[for="consent"]:is(:active, :focus, :hover) {
     cursor: pointer;
 }
-label:has(input[name="query"]:is(:hover, :focus)) {
+label:has(input[name="query"]:is(:active, :focus)) {
     border: 1px solid var(--green-600);
     cursor: pointer;
     background-color: var(--green-200);
 }
+label:has(input[name="query"]:hover) {
+    border: 1px solid var(--green-600);
+    cursor: pointer;
+    
+}
+
+
 input[type="checkbox"] {
     accent-color: var(--green-600);
     width: 20px;
@@ -146,6 +153,12 @@ input[type="radio"] {
     font-size: 1.1rem
 }
 
+.submit-btn:is(:hover) {
+    cursor: pointer;
+
+   /* filter:brightness(0.5); */
+}
+
 .radio-con {
     padding-block-start: 1rem;
     display: grid;
@@ -164,6 +177,10 @@ textarea {
     height: 6.5rem;
     padding-block: 0.7rem;
     padding-inline: 1.6rem;
+}
+
+textarea:is(:hover, :focus) {
+    border: 2px solid var(--green-600);
 }
 .textarea-con {
     padding-block-end: 1rem;
