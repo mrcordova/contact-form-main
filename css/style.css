@@ -32,7 +32,10 @@
     display: grid;
     place-content: safe center;
 
-    margin-block: 2rem;
+    /* Mobile */
+    /* margin-block: 2rem; */
+    /* Desktop */
+    margin-block: 1.25rem;
  }
 
  #contact-form {
