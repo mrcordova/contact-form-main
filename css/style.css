@@ -34,8 +34,9 @@
 
     /* Mobile */
     /* margin-block: 2rem; */
+    margin-block: clamp(1.25rem, 2.2641rem + -1.1268vw, 2rem);
     /* Desktop */
-    margin-block: 1.25rem;
+    /* margin-block: 1.25rem; */
  }
 
  #contact-form {
@@ -50,12 +51,16 @@
     /* padding-block-start: 1.1rem; */
     /* padding-block-end: 1.55rem; */
     
+    padding-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+    padding-block-start: clamp(1.1rem, 0.7831rem + 1.3521vw, 2rem);
+    padding-block-end: clamp(1.55rem, 1.2155rem + 1.4272vw, 2.5rem);
+    inline-size:  clamp(21.4rem, 12.7380rem + 36.9577vw, 46rem);;
     /* Desktop */
-    inline-size: 46rem;
+    /* inline-size: 46rem; */
     /* block-size: 48.39rem; */
-    padding-inline: 2.5rem;
-    padding-block-start: 2rem;
-    padding-block-end: 2.5rem;
+    /* padding-inline: 2.5rem; */
+    /* padding-block-start: 2rem; */
+    /* padding-block-end: 2.5rem; */
  }
 
 
@@ -202,10 +207,13 @@ textarea {
 
     /* Mobile */
     /* height: 15rem; */
+    height: clamp(6.5rem, 17.9930rem + -12.7700vw, 15rem);
+    padding-block: clamp(0rem, -0.2465rem + 1.0516vw, 0.7rem);
+    padding-inline:clamp(0rem, -0.5634rem + 2.4038vw, 1.6rem);
     /* Desktop */
-    height: 6.5rem;
-    padding-block: 0.7rem;
-    padding-inline: 1.6rem;
+    /* height: 6.5rem; */
+    /* padding-block: 0.7rem; */
+    /* padding-inline: 1.6rem; */
 }
 
 textarea:is(:hover, :focus) {
