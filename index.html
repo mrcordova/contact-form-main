@@ -31,22 +31,22 @@
         <label for="first-name">
           First Name <span class="asterick">&nbsp;*</span>
         </label>
-        <input type="text" name="first-name" id="first-name" >
-        <span class="form-error-hide form-error">This field is required</span>
+        <input type="text" name="first-name" id="first-name" aria-describedby="firstname_error"required>
+        <span id="firstname_error" class="form-error-hide form-error">This field is required</span>
       </div>
       <div class="form-controls">
         <label for="last-name">
           Last Name <span class="asterick">&nbsp;*</span>
         </label>
-        <input type="text" name="last-name" id="last-name" >
-        <span class="form-error-hide form-error">This field is required</span>
+        <input type="text" name="last-name" id="last-name" aria-describedby="lastname-error" required >
+        <span id="lastname-errror" class="form-error-hide form-error">This field is required</span>
       </div>
       <div class="form-controls form-controls-full-width">
         <label for="email">
           Email Address <span class="asterick">&nbsp;*</span>
         </label>
-        <input type="email" name="email" id="email" >
-        <span class="form-error-hide form-error">
+        <input  pattern=".+@.+\.com" type="email" name="email" id="email" aria-describedby="email-error" required >
+        <span id="email-error" class="form-error-hide form-error">
           Please enter a valid email address
         </span>
       </div>      
@@ -59,20 +59,20 @@
 
             <!-- <div> -->
               <label for="enquiry" class="radio">
-              <input type="radio" name="query" id="enquiry">
+              <input type="radio" name="query" id="enquiry" aria-describedby="radio-error" required>
                 General Enquiry 
               </label>
             <!-- </div> -->
             
             <!-- <div> -->
               <label for="request" class="radio">
-                <input type="radio" name="query" id="request">
+                <input type="radio" name="query" id="request" aria-describedby="radio-error">
                 Support Request
               </label>
             <!-- </div> -->
           </div>
         </fieldset>
-        <span class="form-error-hide form-error">
+        <span id="radio-error" class="form-error-hide form-error">
           Please select a query type
         </span>
       </div>
@@ -80,20 +80,20 @@
         <label for="message">
           Message <span class="asterick">&nbsp;*</span>
         </label>
-        <textarea name="message" id="message"  ></textarea>
-        <span class="form-error-hide form-error">
+        <textarea name="message" id="message" aria-describedby="message-error" required ></textarea>
+        <span id="message-error" class="form-error-hide form-error">
           This field is required
         </span>
       </div>
       <div class="form-controls form-controls-full-width checkbox-parent">
         <div class="checkbox-con">
 
-          <input type="checkbox" name="consent" id="consent">
+          <input type="checkbox" name="consent" id="consent" aria-describedby="checkbox-error" required>
           <label for="consent">
             I consent to being contacted by the team <span class="asterick">&nbsp;*</span>
           </label>
         </div>
-        <span class="form-error-hide form-error">
+        <span id="checkbox-error" class="form-error-hide form-error">
           To submit this form, please consent to being contacted
         </span>
       </div>
