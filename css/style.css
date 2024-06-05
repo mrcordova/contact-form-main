@@ -43,7 +43,7 @@
     display: grid;
     gap: 1.5rem;
     border-radius: 15px;
-    /* Mobile */
+    /* Mobile */    
     /* inline-size: 21.4rem; */
     /* block-size: 54.3rem; */
     /* padding-inline: 1.5rem; */
@@ -52,7 +52,7 @@
     
     /* Desktop */
     inline-size: 46rem;
-    block-size: 48.39rem;
+    /* block-size: 48.39rem; */
     padding-inline: 2.5rem;
     padding-block-start: 2rem;
     padding-block-end: 2.5rem;
@@ -94,7 +94,7 @@ input{
     padding-block: 0.8rem;
     padding-inline: 1.4rem;
     border-radius: 8px;
-    border: 1px solid var(--green-600);
+    border: 1px solid var(--grey-900);
 }
 
 label:has(input[name="query"]) {
@@ -105,7 +105,7 @@ label:has(input[name="query"]) {
     padding-block: 0.7rem;
     padding-inline: 1.6rem;
     border-radius: 8px;
-    border: 1px solid var(--green-600);
+    border: 1px solid var(--grey-900);
 }
 
 
@@ -143,11 +143,14 @@ input[type="radio"] {
 textarea {
     border-radius: 8px;
     resize: none;
-    border: 1px solid var(--green-600);
+    border: 1px solid var(--grey-900);
+
     /* Mobile */
     /* height: 15rem; */
     /* Desktop */
     height: 6.5rem;
+    padding-block: 0.7rem;
+    padding-inline: 1.6rem;
 }
 .textarea-con {
     padding-block-end: 1rem;
