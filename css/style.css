@@ -99,7 +99,7 @@ input{
     padding-block: 0.8rem;
     text-indent: 1.4rem;
     border-radius: 8px;
-    border: 1px solid var(--grey-900);
+    border: 1px solid var(--grey-500);
 }
 
 input:is(:active, :focus, :hover) {
@@ -116,7 +116,7 @@ label:has(input[name="query"]) {
     padding-block: 0.7rem;
     padding-inline: 1.6rem;
     border-radius: 8px;
-    border: 1px solid var(--grey-900);
+    border: 1px solid var(--grey-500);
 }
 
 
@@ -147,6 +147,7 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
 }
+
 input[type='checkbox']:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
     background-image: url('../assets/images/icon-checkbox-check.svg');
 }
@@ -215,7 +216,7 @@ input[type="radio"] {
 textarea {
     border-radius: 8px;
     resize: none;
-    border: 1px solid var(--grey-900);
+    border: 1px solid var(--grey-500);
 
    
     height: clamp(6.5rem, 17.9930rem + -12.7700vw, 15rem);
