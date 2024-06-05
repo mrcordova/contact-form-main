@@ -97,6 +97,11 @@ input{
     border: 1px solid var(--grey-900);
 }
 
+input:is(:hover, :focus) {
+    border: 1px solid var(--green-600);
+    cursor: pointer;
+}
+
 label:has(input[name="query"]) {
     display: flex;
     align-items: center;
@@ -107,13 +112,20 @@ label:has(input[name="query"]) {
     border-radius: 8px;
     border: 1px solid var(--grey-900);
 }
-
-
+label[for="consent"]:is(:hover, :focus) {
+    cursor: pointer;
+}
+label:has(input[name="query"]:is(:hover, :focus)) {
+    border: 1px solid var(--green-600);
+    cursor: pointer;
+    background-color: var(--green-200);
+}
 input[type="checkbox"] {
     accent-color: var(--green-600);
     width: 20px;
     height: 20px;
 }
+
 input[type="radio"] {
     /* all: unset ; */
     accent-color: var(--green-600);
@@ -122,6 +134,7 @@ input[type="radio"] {
     
     /* border: 20px solid r; */
 }
+
 
 .submit-btn {
     text-align: center;
