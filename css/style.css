@@ -98,6 +98,7 @@ input{
 }
 
 input:is(:active, :focus, :hover) {
+    outline: none;
     border: 2px solid var(--green-600);
     cursor: pointer;
 }
@@ -114,9 +115,11 @@ label:has(input[name="query"]) {
 }
 label[for="consent"]:is(:active, :focus, :hover) {
     cursor: pointer;
+    
 }
 label:has(input[name="query"]:is(:active, :focus)) {
-    border: 1px solid var(--green-600);
+    outline: none;  
+    border: 2px solid var(--green-600);
     cursor: pointer;
     background-color: var(--green-200);
 }
@@ -153,9 +156,9 @@ input[type="radio"] {
     font-size: 1.1rem
 }
 
-.submit-btn:is(:hover) {
+.submit-btn:hover {
     cursor: pointer;
-
+    background-color: hsl(169, 82%, 10%);
    /* filter:brightness(0.5); */
 }
 
@@ -180,6 +183,7 @@ textarea {
 }
 
 textarea:is(:hover, :focus) {
+    outline: none;
     border: 2px solid var(--green-600);
 }
 .textarea-con {
