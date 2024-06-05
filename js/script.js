@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('input[type=text], input[type=email], t
 const checkInput = document.querySelector('input[type=checkbox]');
 const radioInputs = document.querySelectorAll('input[name=query]');
 const dialog = document.querySelector('dialog');
-
+const form = document.getElementById('contact-form');
 
 
 
@@ -20,5 +20,7 @@ submitBtn.addEventListener('click', (e) => {
     }
     spanCheck.classList.toggle('form-error-hide', checkInput.checkValidity());
     
-    
+    if (form.checkValidity()) {
+        dialog.showModal();
+    }
 } )
