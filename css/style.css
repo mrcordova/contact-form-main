@@ -1,244 +1,218 @@
- :root {
-    --green-200: hsl(148, 38%, 91%);
-    --green-600 : hsl(169, 82%, 27%);
-    --red: hsl(0, 66%, 54%);
-    --white: hsl(0, 0%, 100%);
-    --grey-500 : hsl(186, 15%, 59%); 
-     --grey-900: hsl(187, 24%, 22%);
-
+:root {
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
 }
-
-
 
 .karla-400 {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .karla-700 {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
- .asterick {
-    color: var(--green-600);
- }
+.asterick {
+  color: var(--green-600);
+}
 
- 
- body {
-    background-color: var(--green-200);
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: grid;
-    place-content: safe center;
+body {
+  background-color: var(--green-200);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-content: safe center;
 
-    
-    margin-block: clamp(1.25rem, 2.2641rem + -1.1268vw, 2rem);
-   
- }
+  margin-block: clamp(1.25rem, 2.2641rem + -1.1268vw, 2rem);
+}
 
- #contact-form {
-    background-color: var(--white);
-    display: grid;
-    gap: 1.5rem;
-    border-radius: 15px;
-  
-    
-    padding-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-    padding-block-start: clamp(1.1rem, 0.7831rem + 1.3521vw, 2rem);
-    padding-block-end: clamp(1.55rem, 1.2155rem + 1.4272vw, 2.5rem);
-    inline-size:  clamp(21.4rem, 12.7380rem + 36.9577vw, 46rem);;
-    
- }
+#contact-form {
+  background-color: var(--white);
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 15px;
 
+  padding-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  padding-block-start: clamp(1.1rem, 0.7831rem + 1.3521vw, 2rem);
+  padding-block-end: clamp(1.55rem, 1.2155rem + 1.4272vw, 2.5rem);
+  inline-size: clamp(21.4rem, 12.738rem + 36.9577vw, 46rem);
+}
 
 .checkbox-con {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
 }
 .checkbox-parent {
-    padding-block-end: 1rem;
+  padding-block-end: 1rem;
 }
 
 fieldset {
-    all: unset;
+  all: unset;
 }
- .form-controls {
-    display: grid;
-    gap: 0.5rem;
- }
-
+.form-controls {
+  display: grid;
+  gap: 0.5rem;
+}
 
 .form-controls-full-width {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
-
 
 .form-error {
-    color: var(--red);
+  color: var(--red);
 }
 .form-error-hide {
-    display: none;
+  display: none;
 }
 .form-error-border {
-    border: 1px solid var(--red);
+  border: 1px solid var(--red);
 }
 .form-heading {
-    color: var(--grey-900);
-    font-size: 1.9rem;
-    
-    
+  color: var(--grey-900);
+  font-size: 1.9rem;
 }
 
-
-
-input{
-    padding-block: 0.8rem;
-    text-indent: 1.4rem;
-    border-radius: 8px;
-    border: 1px solid var(--grey-500);
+input {
+  padding-block: 0.8rem;
+  text-indent: 1.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey-500);
 }
 
 input:is(:active, :focus, :hover) {
-    outline: none;
-    border: 2px solid var(--green-600);
-    cursor: pointer;
+  outline: none;
+  border: 2px solid var(--green-600);
+  cursor: pointer;
 }
 
 label:has(input[name="query"]) {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    font-size: 1.08rem;
-    padding-block: 0.7rem;
-    padding-inline: 1.6rem;
-    border-radius: 8px;
-    border: 1px solid var(--grey-500);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.08rem;
+  padding-block: 0.7rem;
+  padding-inline: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey-500);
 }
-
-
 
 label:has(input[name="query"]:is(:active, :focus)) {
-    outline: none;  
-    border: 2px solid var(--green-600);
-    cursor: pointer;
-    background-color: var(--green-200);
+  outline: none;
+  border: 2px solid var(--green-600);
+  cursor: pointer;
+  background-color: var(--green-200);
 }
 
- label[for="consent"]:is(:active, :focus, :hover) {
-    cursor: pointer;
-    color: var(--green-600);
-   
- }
+label[for="consent"]:is(:active, :focus, :hover) {
+  cursor: pointer;
+  color: var(--green-600);
+}
 
 label:has(input[name="query"]:hover) {
-    border: 1px solid var(--green-600);
-    cursor: pointer;
-    
+  border: 1px solid var(--green-600);
+  cursor: pointer;
 }
-
-
 
 input[type="checkbox"] {
-    accent-color: var(--green-600);
-    width: 20px;
-    height: 20px;
+  accent-color: var(--green-600);
+  width: 20px;
+  height: 20px;
 }
 
-input[type='checkbox']:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
-    background-image: url('../assets/images/icon-checkbox-check.svg');
+input[type="checkbox"]:has(+ label[for="consent"]:is(:active, :focus, :hover)) {
+  background-image: url("../assets/images/icon-checkbox-check.svg");
 }
 
-input[type='checkbox']:is(:active, :focus, :hover) {
-    outline: var(--green-600 );
-    outline-style: solid;
-    outline-width: 1px;
+input[type="checkbox"]:is(:active, :focus, :hover) {
+  outline: var(--green-600);
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 input[type="radio"] {
-    accent-color: var(--green-600);
-    width: 20px;
-    height: 20px;
-    
-    
+  accent-color: var(--green-600);
+  width: 20px;
+  height: 20px;
 }
 
 .success-message-con {
-    background-color: var(--grey-900);
-    color: var(--white);
-    border: 0px;
-    border-radius: 10px;
-    justify-self: center;
-    margin-block-start: 0.1rem;
-    
-    inline-size: clamp(21rem, 18.5352rem + 10.5164vw, 28rem);
-    block-size: clamp(7rem, 9.7042rem + -3.0047vw, 9rem);
+  background-color: var(--grey-900);
+  color: var(--white);
+  border: 0px;
+  border-radius: 10px;
+  justify-self: center;
+  margin-block-start: 0.1rem;
+
+  inline-size: clamp(21rem, 18.5352rem + 10.5164vw, 28rem);
+  block-size: clamp(7rem, 9.7042rem + -3.0047vw, 9rem);
 }
 
-.success-message-con>h2 {
-    font-size: 1.1rem;
-    display: flex;
-    gap: 0.6rem;
- 
-    margin-block: 0.6rem;
-    margin-inline-start: 0.5rem;
+.success-message-con > h2 {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 0.6rem;
+
+  margin-block: 0.6rem;
+  margin-inline-start: 0.5rem;
 }
 
-.success-message-con>p {
-    margin-inline-start: 0.3rem;
+.success-message-con > p {
+  margin-inline-start: 0.3rem;
 }
 
 .submit-btn {
-    text-align: center;
-    background-color: var(--green-600);
-    color: var(--white);
-    padding-block: 1.05rem;
-    
-    border-radius: 8px;
-    font-size: 1.1rem
+  text-align: center;
+  background-color: var(--green-600);
+  color: var(--white);
+  padding-block: 1.05rem;
+
+  border-radius: 8px;
+  font-size: 1.1rem;
 }
 
 .submit-btn:hover {
-    cursor: pointer;
-    background-color: hsl(169, 82%, 10%);
+  cursor: pointer;
+  background-color: hsl(169, 82%, 10%);
 }
 
 .radio-con {
-    padding-block-start: 1rem;
-    display: grid;
-    gap: 1rem;
-  
+  padding-block-start: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 textarea {
-    border-radius: 8px;
-    resize: none;
-    border: 1px solid var(--grey-500);
+  border-radius: 8px;
+  resize: none;
+  border: 1px solid var(--grey-500);
 
-   
-    height: clamp(6.5rem, 17.9930rem + -12.7700vw, 15rem);
-    padding-block: 0.7rem;
-    text-indent: 1.6rem;
-
+  height: clamp(6.5rem, 17.993rem + -12.77vw, 15rem);
+  padding-block: 0.7rem;
+  text-indent: 1.6rem;
 }
 
 textarea:is(:hover, :focus) {
-    outline: none;
-    border: 2px solid var(--green-600);
+  outline: none;
+  border: 2px solid var(--green-600);
 }
 .textarea-con {
-    padding-block-end: 1rem;
+  padding-block-end: 1rem;
 }
 
- @media (min-width: 35rem) {
-    #contact-form {
-        grid-template-columns: 1fr 1fr;
-    }
+@media (min-width: 35rem) {
+  #contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .radio-con {
-        grid-template-columns: 1fr 1fr;
-    }
- }
+  .radio-con {
+    grid-template-columns: 1fr 1fr;
+  }
+}
